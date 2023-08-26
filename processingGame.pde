@@ -1,10 +1,3 @@
-/*
- Yugam Amish Patel
- Student Id = 7937959
- Assignment 4
- Question 1 to 4
- class : A01 
- */
 
 /*
 OVERVIEW
@@ -58,15 +51,11 @@ float increaseSpiderSpeed = 0 ; //By how much the speed of spider increases afte
 boolean goRightOrLeft ;  //  boolean expression for checking the obsticle and taking  the clearance so the right or left move is allowed
 boolean goUPOrDown ;   // //  boolean expression for checking the obsticle and taking  the clearance so the Up or Down move is allowed
 
-// Question 3
-
 boolean dead = false ;    // boolean to check weather carlin is dead or got traped by the spider
 int levelUpByOne = 1 ;   // Increase the speed of the spider by one
 int levelNumber = 1 ;      // The level of the game
 String level = "Level: " ;   // String to print at the top of the canvas
 
-
-// Qustion 4
 
 int carlinsMagicPowers = 3 ;   // The Total Magic powers of Carlin
 boolean usedMagic = false ;  // boolean to know whether carlin used magic in a perticular level and also to make sure only one magic is used in one level
@@ -75,11 +64,7 @@ int frozenRow ;  // frozenRow
 int magicWidth  = SPACING ;  // size of the ice or the magic block
 boolean pressed ;  // boolean to store the keyPressed() function
 
-
-
 void setup() {  //Setup Start
-
-
 
   size(600, 800) ; // Size of the Canvas
 
@@ -95,9 +80,6 @@ void setup() {  //Setup Start
 
   carlinY = hallBottomY - SPACING/2 ;   // The Y coordinates of the carlin At the bottom
 } // Setup End
-
-
-
 
 
 void draw() {  // Draw Start
@@ -125,13 +107,9 @@ Calls the Functions  drawHall() , drawDoor() ,  drawSpider() , drawCarlin() .
   drawCarlin() ;  // Draws carlin at the bottom at the begining by calling drawCarlin()
   moveSpider() ;  // move spider in Random Location
 
-  // Question 3
   showLevel() ;  // showing level at the top of the canvas
   levelUp() ;  // function to level up after carlin reached the door
   endGame() ;  // Ending the game once carlin is dead or traped by the spider
-
-
-  // Question 4
 
   speedAndMagic() ;   //Showing  speed and score at the bottom of the canvas
   spiderInsideMagic() ;   // funtion to decrase the speed of the spider , if the spider is inside the ice
@@ -197,8 +175,6 @@ void drawCarlin() { //drawCarlin Start
 }// drawCarlin Ends
 
 
-
-
 int initialCalin(int randomNum) { // initialCalin()  Starts
   /*
 this function initialize a random x location of carlin at the bottom by taking random numbers betweeen 1 and 17
@@ -239,10 +215,6 @@ This Function Draws Spider Under Certain Condition that is when spiderX is not -
     spiderY = HALL_TOP + SPACING/2 ;  // The value of spiderY when spiderY is not -1
   }
 } // drawSpider End
-
-
-
-
 
 
 int initialSpider(int randomNum) {  // initialSpider() Start
