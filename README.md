@@ -9,6 +9,3 @@ not all; Carlin is equipped with a specific ability too. She can make ice and fr
 location of the hall. While she can only use her ability for a limited number of times, if Spider
 touches the frozen surface of the hall path, it makes the spider much slower and buys more time
 for Carlin to pass the hall(s).
-In this assignment, you will create a game in which the hero character starts at a specific point,
-passes some blocks in a series of halls, avoids hitting the evil character and tries to reach the hall
-doors. The game levels up every time that the player reaches the door.
